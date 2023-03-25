@@ -13,6 +13,13 @@ public abstract class TopicTest {
     protected static Course dsci320;
     protected static Course math100;
     protected static Course math101;
+    protected static Course cpsc210;
+    protected static Course cpsc221;
+    protected static Course cpsc213;
+    protected static Course cpsc310;
+    protected static Course cpsc410;
+    protected static Course cpsc320;
+    protected static Course cpsc420;
 
     protected List<Course> courseList;
 
@@ -51,6 +58,22 @@ public abstract class TopicTest {
                 "elementary functions. Applications and modelling: graphing, optimization.");
         math101 = new Course("MATH 101", "Integral Calculus with Applications", "The definite" +
                 " integral, integration techniques, applications, modelling, infinite series.");
+        cpsc210 = new Course("CPSC 210", "Software Construction", "Design, development, and " +
+                "analysis of robust software components. Topics such as software design, computational models, " +
+                "data structures, debugging, and testing.");
+        cpsc213 = new Course("CPSC 213", "Introduction to Computer Systems",
+                "Software architecture, operating systems, and I/O architectures. Relationships between " +
+                        "application software, operating systems, and computing hardware; critical sections, " +
+                        "deadlock avoidance, and performance; principles and operation of disks and networks." );
+        cpsc221 = new Course("CPSC 221", " Basic Algorithms and Data Structures",
+                "Design and analysis of basic algorithms and data structures; algorithm analysis methods," +
+                        " searching and sorting algorithms, basic data structures, graphs and concurrency." );
+        cpsc310 = new Course ("CPSC 310", "Introduction to Software Engineering",
+                "Specification, design, validation, evolution and construction of modern software systems, " +
+                        "within the context of socially and professionally relevant domains such as ethics, " +
+                        "intellectual property, and information security. ");
+        cpsc410 = new Course ("CPSC 410", "Advanced Software Engineering",
+                "Specification, design, construction and validation of multi-version software systems.");
 
 
 
