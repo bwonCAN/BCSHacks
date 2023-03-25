@@ -16,6 +16,7 @@ public class GUI extends JFrame {
     private JMenuBar menuBar;
     private DataScience dataScience;
     private JPanel panel;
+    private JPanel fieldsPanel;
 
     public GUI() {
         initializeGraphics();
@@ -33,9 +34,23 @@ public class GUI extends JFrame {
     }
 
     private void createMenuBar() {
-        menuBar = new MenuBar();
+        menuBar = new JMenuBar();
         add(menuBar, BorderLayout.NORTH);
 
+        JMenu viewOption = new JMenu("View");
+        add(viewOption);
+
+        JMenuItem coursesOption = new JMenuItem("Fields");
+        coursesOption.addActionListener(e -> displayFields());
+        viewOption.add(coursesOption);
+    }
+
+    private void displayFields() {
+        fieldsPanel = new JPanel();
+        fieldsPanel.setLayout(new GridLayout(3,1));
+        fieldsPanel.add(new JButton("Data Science"));
+        fieldsPanel.add(new JButton("Algorithms"));
+        fieldsPanel.add(new JButton("Software Engineering"));
     }
 
     public void coursesAsButtons() {
