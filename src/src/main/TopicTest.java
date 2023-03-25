@@ -74,6 +74,11 @@ public abstract class TopicTest {
                         "intellectual property, and information security. ");
         cpsc410 = new Course ("CPSC 410", "Advanced Software Engineering",
                 "Specification, design, construction and validation of multi-version software systems.");
+        cpsc320 = new Course("CPSC 320", "Intermediate Algorithm Design and Analysis",
+                "Systematic study of basic concepts and techniques in the design and analysis of " +
+                        "algorithms, illustrated from various problem areas.");
+        cpsc420 = new Course("CPSC 420", "Advanced Algorithms Design and Analysis", "The study " +
+                "of advanced topics in the design and analysis of algorithms and associated data structures. ");
 
 
 
