@@ -1,5 +1,6 @@
 package main;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public abstract class TopicTest {
@@ -13,9 +14,11 @@ public abstract class TopicTest {
     protected static Course math100;
     protected static Course math101;
 
+    protected List<Course> courseList;
+
 
     public TopicTest() {
-
+        courseList = new ArrayList<Course>();
     }
 
     public void createCourses() {
@@ -55,6 +58,8 @@ public abstract class TopicTest {
 
     }
 
-    public abstract List<Course> getCourseList();
+    public List<Course> getCourseList() {
+        return courseList;
+    }
 
 }
