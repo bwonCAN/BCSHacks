@@ -19,6 +19,10 @@ public class GUI extends JFrame {
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLayout(new BorderLayout());
 
+        createMenuBar();
+    }
+
+    private void createMenuBar() {
         menuBar = new MenuBar();
         add(menuBar, BorderLayout.NORTH);
         setVisible(true);
