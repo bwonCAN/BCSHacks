@@ -10,12 +10,14 @@ import java.util.List;
 public class DataScience extends TopicTest {
     private List<Course> courseList;
 
-
     public DataScience() {
         courseList = new ArrayList<>();
-
         courseList.add(cpsc110);
-
+        courseList.add(dsci100);
+        courseList.add(dsci310);
+        courseList.add(dsci320);
+        courseList.add(math100);
+        courseList.add(math101);
     }
 
     @Override
