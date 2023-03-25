@@ -24,4 +24,5 @@ public class DataScience extends TopicTest {
     public List<Course> getCourseList() {
         return courseList;
     }
+
 }
