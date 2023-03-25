@@ -7,6 +7,11 @@ public abstract class TopicTest {
     protected static Course cpsc110;
     protected static Course cpsc121;
     protected static Course cpsc203;
+    protected static Course dsci100;
+    protected static Course dsci310;
+    protected static Course dsci320;
+    protected static Course math100;
+    protected static Course math101;
 
 
     public TopicTest() {
@@ -28,6 +33,26 @@ public abstract class TopicTest {
                         "explorations of topics from applied algorithms, for example Voronoi Diagrams, Markov " +
                         "Chains, Bin Packing, and Graph Search. Not for students with credit for, or currently " +
                         "enrolled in, CPSC 210 or CPEN 221.");
+
+        dsci100 = new Course("DSCI 100", "Introduction to Data Science", "Use of data science tools to summarize, " +
+                "visualize, and analyze data. Sensible workflows and clear interpretations are emphasized.");
+        dsci310 = new Course("DSCI 310", "Reproducible and Trustworthy Workflows for Data Science", "Data science" +
+                " methods to automate the running and testing of code and analytic reports, manage data analysis " +
+                "software dependencies, package and deploy software for data analysis, and collaborate with others " +
+                "using version control.");
+        dsci320 = new Course("DSCI 320", "Visualization for Data Science", "Analysis, design, and " +
+                "implementation of static and interactive visual representations; visualization literacy; " +
+                "data communication; exploratory Data Analysis; application of theoretical principles " +
+                "to visualization development.");
+        math100 = new Course("MATH 100", "Differential Calculus with Applications", "Derivatives of " +
+                "elementary functions. Applications and modelling: graphing, optimization.");
+        math101 = new Course("MATH 101", "Integral Calculus with Applications", "The definite" +
+                " integral, integration techniques, applications, modelling, infinite series.");
+
+
+
+
+
     }
 
     public abstract List<Course> getCourseList();
