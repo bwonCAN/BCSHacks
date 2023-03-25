@@ -36,6 +36,7 @@ public class GUI extends JFrame {
     }
 
     public void coursesAsButtons() {
+        Panel panel = new Panel();
         for (Course course : dataScience.getCourseList()) {
             JButton button = new JButton(course.getName());
             Label courseDescription =  new Label();
@@ -46,8 +47,8 @@ public class GUI extends JFrame {
                     courseDescription.setText(course.getDescription());
                 }
             });
-            add(courseDescription);
-            add(button);
+            panel.add(courseDescription);
+            panel.add(button);
 
         }
     }
