@@ -19,6 +19,7 @@ public abstract class TopicTest {
     protected static Course cpsc310;
     protected static Course cpsc410;
     protected static Course cpsc320;
+    protected static Course cpsc340;
     protected static Course cpsc420;
 
     protected List<Course> courseList;
@@ -77,6 +78,11 @@ public abstract class TopicTest {
         cpsc320 = new Course("CPSC 320", "Intermediate Algorithm Design and Analysis",
                 "Systematic study of basic concepts and techniques in the design and analysis of " +
                         "algorithms, illustrated from various problem areas.");
+        cpsc340 = new Course("CPSC 340", "Machine Learning and Data Mining", " Models of " +
+                "algorithms for dimensionality reduction, nonlinear regression, classification, clustering and " +
+                "unsupervised learning; applications to computer graphics, computer games, bio-informatics, " +
+                "information retrieval, e-commerce, databases, computer vision and artificial intelligence.");
+
         cpsc420 = new Course("CPSC 420", "Advanced Algorithms Design and Analysis", "The study " +
                 "of advanced topics in the design and analysis of algorithms and associated data structures. ");
 
