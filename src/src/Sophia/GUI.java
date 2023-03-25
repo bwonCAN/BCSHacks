@@ -2,6 +2,7 @@ package Sophia;
 
 import SophiE.DataScience;
 import main.Course;
+import main.TopicTest;
 
 import javax.swing.*;
 import javax.swing.border.EmptyBorder;
@@ -14,9 +15,11 @@ public class GUI extends JFrame {
     private static final int HEIGHT = 500;
 
     private JMenuBar menuBar;
-    private DataScience dataScience;
+    private TopicTest dataScience;
+    private TopicTest algorithms;
     private JPanel panel;
     private JPanel fieldsPanel;
+
 
     public GUI() {
         initializeGraphics();
@@ -28,8 +31,10 @@ public class GUI extends JFrame {
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLayout(new BorderLayout());
 
+        dataScience = new DataScience();
+        algorithms = new Algorithms();
+
         createMenuBar();
-        coursesAsButtons();
         setVisible(true);
     }
 
@@ -53,12 +58,19 @@ public class GUI extends JFrame {
         fieldsPanel.add(new JButton("Software Engineering"));
     }
 
-    public void coursesAsButtons() {
+    private void menuResponse() {
+//        if (menuBar.isSelected()) {
+//            coursesAsButtons(algorithms);
+//        }
+//        coursesAsButtons(algorithms);
+    }
+
+    public void coursesAsButtons(TopicTest topic) {
         panel = new JPanel();
         dataScience = new DataScience();
-        System.out.println(dataScience.getCourseList());
+        System.out.println(topic.getCourseList());
 
-        for (Course course : dataScience.getCourseList()) {
+        for (Course course : topic.getCourseList()) {
             JButton button = new JButton(course.getName());
             //Label courseDescription =  new Label();
             JTextArea jTextField= new JTextArea();
@@ -76,7 +88,7 @@ public class GUI extends JFrame {
             add(scrollPane);
             scrollPane.createVerticalScrollBar();
             ((JPanel) getContentPane()).setBorder(new EmptyBorder(7, 13, 13, 13));
-            panel.setLayout(new GridLayout(dataScience.getCourseList().size(),3, 2, 2));
+            panel.setLayout(new GridLayout(topic.getCourseList().size(),3, 2, 2));
             panel.setSize(300,300);
             panel.add(button);
             panel.add(jTextField);

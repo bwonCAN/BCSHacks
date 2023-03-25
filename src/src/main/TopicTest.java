@@ -22,16 +22,17 @@ public abstract class TopicTest {
     protected static Course cpsc340;
     protected static Course cpsc420;
     protected static Course cpsc322;
-    protected static Course cpsc340;
     protected static Course cpsc330;
     protected static Course cpsc425;
     protected static Course cpsc422;
     protected static Course cpsc440;
 
     protected List<Course> courseList;
+    protected String name;
 
     public TopicTest() {
         courseList = new ArrayList<Course>();
+        name = new String();
         createCourses();
     }
 
@@ -114,16 +115,14 @@ public abstract class TopicTest {
                 "underlying the design, implementation and evaluation of intelligent computational systems. " +
                 "Applications of artificial intelligence to natural language understanding, image understanding and" +
                 " computer-based expert and advisor systems. Advanced symbolic programming methodology.");
-
-        cpsc440 = new Course("CPSC 440", "Advanced Methods for Human Computer Interaction",
-                "Design and evaluation methodologies and theories; formal models of the user including " +
-                        "visual, motor, and information processing; advanced evaluation methods including laboratory " +
-                        "experiments and field studies; HCI research frontiers.");
-
     }
 
     public List<Course> getCourseList() {
         return courseList;
+    }
+
+    public String getName() {
+        return name;
     }
 
 }

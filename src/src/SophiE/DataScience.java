@@ -7,6 +7,7 @@ public class DataScience extends TopicTest {
     public DataScience() {
         super();
         addCourses();
+        name = "Data Science";
     }
 
     private void addCourses() {
