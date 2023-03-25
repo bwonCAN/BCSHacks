@@ -23,9 +23,9 @@ public abstract class TopicTest {
 
     protected List<Course> courseList;
 
-
     public TopicTest() {
         courseList = new ArrayList<Course>();
+        createCourses();
     }
 
     public void createCourses() {
